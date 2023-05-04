@@ -1,7 +1,7 @@
-import React from 'react';
 import './footer.css';
 import { Link } from 'react-router-dom';
 import links from '../utils/siteLinks';
+import Logo from "../images/logo2.png";
 
 const Footer = () => {
   const contacts = ['Address', 'Phone', 'Email'];
@@ -12,6 +12,7 @@ const Footer = () => {
     { name: 'linkedin', url: 'https://linkedin.com', icon: 'bi bi-linkedin' },
     { name: 'google', url: 'https://google.com', icon: 'bi bi-google' },
   ];
+  
 
   return (
     <footer className="bg-light py-3">
@@ -19,9 +20,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-3">
             <Link to="/">
-              <img
-                src="https://images2.imgbox.com/0e/c6/AvYTF4tK_o.png"
-                alt="Little Lemon Logo"
+              <img 
+                className='mt-5'
+                src={Logo}
+                alt="Little Lemon"
                 width="100"
               />
             </Link>
