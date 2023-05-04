@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Greek Salad",
+    "src":"https://images2.imgbox.com/ab/f3/rdOarPzh_o.png",
+    "price": "$12.99",
+    "description": "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic. "
+  },
+  {
+    "name": "Brushetta",
+    "src":"https://images2.imgbox.com/cf/34/7cr4abLb_o.png",
+    "price": "$7.99",
+    "description": "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+  },
+  {
+    "name": "Grilled Fish",
+    "src":"https://images2.imgbox.com/b0/8a/6BmMEuWV_o.png",
+    "price": "$20.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus. Lorem ipsum dolor sit amet"
+  }
+]
+
