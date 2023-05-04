@@ -1,10 +1,10 @@
-import React from 'react';
 import Button from './Button';
 import dishes from '../utils/dishes';
 import Card from './Card';
 import './specials.css';
 
 const Specials = () => {
+  
   return (
     <section className="specials p-5 w-100">
       <div className="container">

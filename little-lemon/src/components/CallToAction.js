@@ -1,7 +1,7 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 import './call-to-action.css';
+import Hero from "../images/food.jpg";
 
 const CallToAction = () => {
   const navigate = useNavigate();
@@ -22,8 +22,8 @@ const CallToAction = () => {
           <div className="col-md-6 mb-3">
             <img
               className="hero w-100"
-              src="https://images2.imgbox.com/81/3e/scEJEW4D_o.png"
-              alt="little lemon"
+              src={Hero}
+              alt="chef holding a tray with food"
             />
           </div>
         </div>

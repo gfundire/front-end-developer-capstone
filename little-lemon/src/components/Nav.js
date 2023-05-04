@@ -1,6 +1,6 @@
-import React from 'react';
 import Links from './Links';
 import { Link } from 'react-router-dom';
+import Logo from "../images/logo.png";
 
 const Nav = () => (
   <nav className="navbar sticky-top navbar-expand-md nav-pills px-5 bg-light ">
@@ -10,8 +10,8 @@ const Nav = () => (
           className="d-inline-block"
           width="140"
           height="40"
-          src="https://images2.imgbox.com/fe/61/RrOIGU8Y_o.png"
-          alt="logo"
+          src={Logo}
+          alt="Little Lemon"
         />
       </Link>
       <button

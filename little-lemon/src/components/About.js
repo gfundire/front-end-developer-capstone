@@ -1,5 +1,5 @@
-import React from 'react';
 import './about.css';
+import Owners from "../images/adrianmario.png"
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
           <article className="col col-md-6">
             <img
               className="img-fluid about-img"
-              src="https://thumbs2.imgbox.com/b7/97/VqONgn8H_t.png"
+              src={Owners}
               alt="Adrian and Mario"
             />
           </article>

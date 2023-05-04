@@ -1,4 +1,4 @@
-import React from 'react';
+import deliveryIcon from "../images/Cycling.svg";
 
 const Card = ({ title, text, src, price }) => {
   return (
@@ -13,7 +13,7 @@ const Card = ({ title, text, src, price }) => {
         <div className="px-3">
           <a href="#" className="text-white" aria-hidden="true">
             <img
-              src="https://images2.imgbox.com/76/67/xLSAKY7E_o.png"
+              src={deliveryIcon}
               alt="order a delivery"
               style={{ width: '35px' }}
             />
