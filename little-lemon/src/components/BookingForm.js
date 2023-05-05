@@ -14,6 +14,7 @@ const BookingForm = ({
   // const { errors, values, touched, getFieldProps } = formik;
 
   const formValid = validateForm();
+
   return (
     <>
       <section>
@@ -156,9 +157,11 @@ const BookingForm = ({
               </div>
             </div>
             <button
+              data-testid="submit-btn"
               aria-label="On Click"
               type="submit"
               className="btn btn-primary btn-lg btn-block"
+              // disabled={!formValid}
               disabled={!formValid}
             >
               Book Table
