@@ -1,5 +1,3 @@
-import React from 'react';
-import Button from './Button';
 import './booking-form.css';
 import Corousel from './Corousel';
 // import Error from './FormError';
