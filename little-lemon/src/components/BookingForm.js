@@ -157,7 +157,7 @@ const BookingForm = ({
               </div>
             </div>
             <button
-              data-testid="submit-btn"
+              data-testid="submitbtn"
               aria-label="On Click"
               type="submit"
               className="btn btn-primary btn-lg btn-block"
