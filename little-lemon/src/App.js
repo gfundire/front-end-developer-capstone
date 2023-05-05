@@ -1,9 +1,8 @@
-import './App.css';
-
 import { useState, useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
+import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
@@ -27,7 +26,7 @@ export default function App() {
     res_time: '',
     guests: '',
     occasion: '',
-    seatingOption: '',
+    seatingOption: ''
   };
 
   const [bookingData, setBookingData] = useState(initialFormValues);
@@ -57,18 +56,18 @@ export default function App() {
     setBookingData({ ...bookingData, [e.target.name]: e.target.value });
   };
 
-  const validateForm = () => {
+  const someFormValuesNotEmpty = () => {
     const bookingValues = Object.values(bookingData);
-    const empty = (currentValue) => currentValue === '';
+    const someEmpty = (currentValue) => (currentValue === '' ? true : false);
     const bookingFieldValues = Object.values(bookingValues);
-    return !bookingFieldValues.some(empty);
+    return !bookingFieldValues.some(someEmpty);
   };
 
-  const isFormValid = validateForm();
+  const validateForm = someFormValuesNotEmpty;
 
   const submitForm = (formData) => {
     const result = submitAPI(formData);
-    if (isFormValid && result) {
+    if (someFormValuesNotEmpty() && result) {
       setBookingData({ ...initialFormValues });
       navigate('/reservations/confirmation');
     }

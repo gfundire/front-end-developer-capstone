@@ -8,7 +8,7 @@ const BookingForm = ({
   handleSubmit,
   booking,
   handleBookingData,
-  validateForm,
+  validateForm
   // formik,
 }) => {
   // const { errors, values, touched, getFieldProps } = formik;
